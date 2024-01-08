@@ -19,3 +19,26 @@ html, body {
     background-attachment: fixed;
     background-position: center;
 }
+
+.navbar-custom {
+    width: 100%;
+    z-index: 100;
+    height: 80px;
+}
+
+/* Modifie la couleur des liens de navigation */
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff !important;
+    transition: color .3s;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+/* Navigation Links Hover Effect */
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: white !important;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
