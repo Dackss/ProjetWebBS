@@ -37,8 +37,44 @@ html, body {
 
 /* Navigation Links Hover Effect */
 .navbar-custom .navbar-nav .nav-link:hover {
-    color: white !important;
     background-color: dodgerblue;
     border-radius: 5px;
     transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Appliquer le border radius pour les images */
+.carousel-item img {
+    border-radius: 10px;
+}
+
+/* Appliquer le border radius pour les images */
+.carousel-item img {
+    border-radius: 10px;
+}
+
+/* Enlève la bordure pour les iframes et appliquer le border radius */
+.carousel-item iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+.carousel-item img, .carousel-item iframe {
+    height: clamp(250px, 500px, 50vh);
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero {
+    height: 100vh;
+    width: 98vw;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 100%;
+    }
+
+    .hero-custom {
+        margin-top: 0 !important;
+    }
 }

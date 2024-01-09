@@ -21,7 +21,7 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-custom justify-content-between">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-custom justify-content-between position-fixed">
         <a class="navbar-brand m-2" style="position: fixed;" href="#">
           <img src="img/favicon.ico" alt="Logo" style="height: 4rem; width: auto; transition: opacity 0.3s ease; border-radius: 50%;">
         </a>
@@ -45,23 +45,22 @@
     </header>
 
     <main> <!-- Main content -->
-      <section class="hero bg-transparent text-white py-5 d-flex flex-column align-items-start mt-4">
-        <div class="container-fluid">
-          <div class="row gx-5">
+      <section class="hero bg-transparent text-white py-5 d-flex flex-column align-items-start mb-5">
+        <div class="container-fluid mb-5 mt-5 hero-custom">
+          <div class="row gx-5 d-flex justify-content-center">
             <div class="col-12 col-md-6">
-              <h1 class="display-1">AllSafe Security</h1>
-              <div class="hero-text">
-                <p class="strong">Sécurité Cloud-Native : Visibilité optimale, technologie eBPF.</p>
-                <p class="strong">Protection AI-Powered : Adaptabilité pour serveurs, VMs, workloads conteneurisés.</p>
-                <p class="strong">Cloud Privé : Performance avec AWS, Azure, Google Cloud.</p>
-                <p class="strong">Entreprises et Particuliers : Sécurité totale, application de bureau, tranquillité assurée.</p>
-                <p class="strong">Partenaire Numérique : Innovation, efficacité, résilience, support expert.</p>
+              <h1 class="display-1 m-5">AllSafe Security</h1>
+              <div class="hero-text p-1 m-5">
+                <p class="strong"><strong>Sécurité Cloud-Native</strong> : Visibilité optimale, technologie eBPF.</p>
+                <p class="strong"><strong>Protection AI-Powered</strong> : Adaptabilité pour serveurs, VMs, workloads conteneurisés.</p>
+                <p class="strong"><strong>Cloud Privé</strong> : Performance avec AWS, Azure, Google Cloud.</p>
+                <p class="strong"><strong>Entreprises et Particuliers</strong> : Sécurité totale, application de bureau, tranquillité assurée.</p>
+                <p class="strong"><strong>Partenaire Numérique</strong> : Innovation, efficacité, résilience, support expert.</p>
               </div>
-              <a href="#features" class="btn btn-primary">Prenez le Contrôle</a>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-8 w-50">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
+                <div class="carousel-indicators d-flex justify-content-center align-items-center">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -74,7 +73,7 @@
                     <img src="img/server_room.jpg" class="d-block w-100" alt="Server Room">
                   </div>
                   <div class="carousel-item">
-                    <iframe width="500" height="500" src="https://www.youtube.com/embed/_tr8nND3lUk?si=_uWxT3RlhHh5ATCK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe class="d-block w-100" src="https://www.youtube.com/embed/_tr8nND3lUk?si=_uWxT3RlhHh5ATCK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -87,6 +86,7 @@
                 </button>
               </div>
             </div>
+            <a href="#features" class="btn btn-primary w-auto m-5 btn-lg btn-dark">Prenez le Contrôle</a>
           </div>
         </div>
       </section>
