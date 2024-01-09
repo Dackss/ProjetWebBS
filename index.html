@@ -22,10 +22,10 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-custom justify-content-between position-fixed">
-        <a class="navbar-brand m-2" style="position: fixed;" href="#">
+        <a class="navbar-brand m-2" href="#">
           <img src="img/favicon.ico" alt="Logo" style="height: 4rem; width: auto; transition: opacity 0.3s ease; border-radius: 50%;">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -179,49 +179,5 @@
         <a href="../../WebstormProjects/Projet%20Web/html/AdminLogin.html" class="btn btn-primary login">Log In</a>
       </div>
     </footer>
-    <script>
-        const menuHamburger = document.querySelector(".navbar-toggler")
-        const navLinks = document.querySelector(".navbar-collapse")
-
-        menuHamburger.addEventListener('click',()=>{
-            navLinks.classList.toggle('show')
-        })
-
-        window.addEventListener('scroll', reveal);
-
-        function reveal() {
-            const reveals = document.querySelectorAll('.reveal');
-
-            for(let i = 0; i < reveals.length; i++) {
-                const windowHeight = window.innerHeight;
-                const revealTop = reveals[i].getBoundingClientRect().top;
-                const revealPoint = 150;
-
-                if(revealTop < windowHeight - revealPoint) {
-                    reveals[i].classList.add('active');
-                }
-                else {
-                    reveals[i].classList.remove('active');
-                }
-            }
-        }
-    </script>
-    <script>
-        const carousel = document.querySelector('.carousel');
-
-        window.addEventListener('resize', () => {
-            if (window.innerWidth <= 900) {
-                carousel.style.display = "none";
-            } else {
-                carousel.style.display = "flex";
-            }
-        });
-
-        window.addEventListener('load', () => {
-            if (window.innerWidth <= 900) {
-                carousel.style.display = "none";
-            }
-        });
-    </script>
   </body>
 </html>
