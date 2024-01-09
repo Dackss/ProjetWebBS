@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="variables.css">
 
     <meta name="theme-color" content="#fafafa">
 
@@ -22,14 +23,14 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-custom justify-content-between position-fixed">
-        <a class="navbar-brand m-2" href="#">
+        <a class="navbar-brand m-2" href="#hero">
           <img src="img/favicon.ico" alt="Logo" style="height: 4rem; width: auto; transition: opacity 0.3s ease; border-radius: 50%;">
         </a>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ms-auto menu-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav m-2">
             <li class="nav-item">
               <a class="nav-link" href="html/About.html">About</a>
             </li>
@@ -45,20 +46,20 @@
     </header>
 
     <main> <!-- Main content -->
-      <section class="hero bg-transparent text-white py-5 d-flex flex-column align-items-start mb-5">
+      <section class="hero bg-transparent text-white py-5 d-flex flex-column align-items-start mb-5" id="hero">
         <div class="container-fluid mb-5 mt-5 hero-custom">
+          <h1 class="display-1 m-5">AllSafe Security</h1>
           <div class="row gx-5 d-flex justify-content-center">
             <div class="col-12 col-md-6">
-              <h1 class="display-1 m-5">AllSafe Security</h1>
               <div class="hero-text p-1 m-5">
-                <p class="strong"><strong>Sécurité Cloud-Native</strong> : Visibilité optimale, technologie eBPF.</p>
-                <p class="strong"><strong>Protection AI-Powered</strong> : Adaptabilité pour serveurs, VMs, workloads conteneurisés.</p>
-                <p class="strong"><strong>Cloud Privé</strong> : Performance avec AWS, Azure, Google Cloud.</p>
-                <p class="strong"><strong>Entreprises et Particuliers</strong> : Sécurité totale, application de bureau, tranquillité assurée.</p>
-                <p class="strong"><strong>Partenaire Numérique</strong> : Innovation, efficacité, résilience, support expert.</p>
+                <p class="strong fs-5"><strong>Sécurité Cloud-Native</strong> : Visibilité optimale, technologie eBPF.</p>
+                <p class="strong fs-5"><strong>Protection AI-Powered</strong> : Adaptabilité pour serveurs, VMs, workloads conteneurisés.</p>
+                <p class="strong fs-5"><strong>Cloud Privé</strong> : Performance avec AWS, Azure, Google Cloud.</p>
+                <p class="strong fs-5"><strong>Entreprises et Particuliers</strong> : Sécurité totale, application de bureau, tranquillité assurée.</p>
+                <p class="strong fs-5"><strong>Partenaire Numérique</strong> : Innovation, efficacité, résilience, support expert.</p>
               </div>
             </div>
-            <div class="col-12 col-md-8 w-50">
+            <div class="col-12 col-md-8 carousel-t">
               <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators d-flex justify-content-center align-items-center">
                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -86,97 +87,101 @@
                 </button>
               </div>
             </div>
-            <a href="#features" class="btn btn-primary w-auto m-5 btn-lg btn-dark">Prenez le Contrôle</a>
+            <div class="row gx-5 d-flex justify-content-center">
+              <div class="col-12 d-flex justify-content-center">
+                <a href="#features" class="btn btn-primary w-auto m-5 btn-lg btn-dark">Prenez le Contrôle</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="features reveal" id="features">
-        <div class="features-container">
-          <div class="feature">
-            <i class="fas fa-shield-alt"></i>
-            <h3>Blindage de Données</h3>
-            <p>Sécurisation inébranlable des données clients. Confidentialité à toute épreuve grâce à des technologies de pointe.</p>
+      <section class="features d-flex flex-column justify-content-center align-items-center min-vh-100 text-center" id="features">        <div class="features-container d-flex justify-content-center align-items-center text-center gap-2">
+          <div class="feature d-flex flex-column align-items-center py-2 feature-box" style="height: 26vh; padding: 2em;">
+            <i class="fas fa-shield-alt feature-icon mb-3"></i>
+            <h3 class="h3 mb-2 feature-title fs-2">Blindage de Données</h3>
+            <p class="feature-text">Sécurisation inébranlable des données clients. Confidentialité à toute épreuve grâce à des technologies de pointe.</p>
           </div>
-          <div class="feature">
-            <i class="fas fa-lock"></i>
-            <h3>Défense Anti-Cyberattaque</h3>
-            <p>Protection robuste contre les menaces en ligne. Défence contre les attaques informatiques. Protégeant la sûreté de vos systèmes.</p>
+          <div class="feature d-flex flex-column align-items-center py-2 feature-box" style="height: 26vh; padding: 2em;">
+            <i class="fas fa-lock feature-icon mb-3"></i>
+            <h3 class="h3 mb-2 feature-title fs-2">Défense Anti-Cyberattaque</h3>
+            <p class="feature-text">Protection robuste contre les menaces en ligne. Défence contre les attaques informatiques. Protégeant la sûreté de vos systèmes.</p>
           </div>
-          <div class="feature">
-            <i class="fas fa-user-shield"></i>
-            <h3>Confidentialité Garantie</h3>
-            <p>Confidentialité totale de vos informations personnelles et professionnelles. Garantie de l'intégrité et la discrétion absolue.</p>
+          <div class="feature d-flex flex-column align-items-center py-2 feature-box" style="height: 26vh; padding: 2em;">
+            <i class="fas fa-user-shield feature-icon mb-3"></i>
+            <h3 class="h3 mb-2 feature-title fs-2">Confidentialité Garantie</h3>
+            <p class="feature-text">Confidentialité totale de vos informations personnelles et professionnelles. Garantie de l'intégrité et la discrétion absolue.</p>
           </div>
         </div>
-        <a href="#services" class="btn btn-primary" id="featuresbutton">Protégez-vous avec nos Solutions Avancées</a>
+        <div class="row gx-5 d-flex justify-content-center position-relative">
+          <div class="col-12 d-flex justify-content-center">
+            <a href="#services" class="btn btn-primary w-auto m-5 btn-lg btn-dark">Protégez-vous avec nos Solutions Avancées</a>
+          </div>
+        </div>
       </section>
 
 
 
-      <section class="services" id="services">
-        <h2><strong>Stratégies de Cybersécurité Personnalisées</strong></h2>
-        <h4>Adaptées à Vos Exigences Spécifiques</h4>
+      <section class="services py-5 d-flex flex-column align-items-center text-center justify-content-center" id="services">
+        <h2 class="display-4 mb-2"><strong>Stratégies de Cybersécurité Personnalisées</strong></h2>
+        <h4 class="h3 mb-3">Adaptées à Vos Exigences Spécifiques</h4>
 
-        <div class="service">
-          <div class="service-image">
-            <img src="../../WebstormProjects/Projet%20Web/img/entreprise-security.jpg" alt="Sécurité pour les Entreprises">
+        <div class="service row gx-5 shadow mb-5 pt-3 pb-3 bg-body rounded">
+          <div class="service-image col align-self-center">
+            <img class="rounded img-fluid w-100 h-auto" src="img/entreprise-security.jpg" alt="Sécurité pour les Entreprises">
           </div>
-          <div class="service-content">
-            <h3><strong>Formule Entreprise: Votre Bouclier Cyber-Sécurité</strong></h3>
-            <p><strong>Boostez</strong> votre résilience face à la cybercriminalité. Nos experts vous offrent une protection globale, allant de l'<strong>évaluation des risques</strong> à la <strong>défense personnalisée</strong>. En cas d'attaque, nous intervenons rapidement pour minimiser l'impact. Grâce à nos <strong>technologies avancées</strong> et à un <strong>support expert</strong>, votre entreprise est en sécurité. Vous pouvez avoir l'esprit tranquille.</p>
-            <ul>
-              <li><strong>Analyse rigoureuse</strong> des menaces et failles.</li>
-              <li><strong>Solutions sur-mesure</strong>, sculptées pour s'adapter parfaitement à votre entreprise.</li>
-              <li><strong>Implication</strong> de vos équipes à travers des formations, pour une riposte encore plus rapide.</li>
+          <div class="service-content col d-flex flex-column align-items-center p-4">
+            <h3 class="h2 mb-2"><strong>Formule Entreprise: Votre Bouclier Cyber-Sécurité</strong></h3>
+            <p class="text-start fs-5 mb-4 text-lg-start"><strong>Boostez</strong> votre résilience face à la cybercriminalité. Nos experts vous offrent une protection globale, allant de l'<strong>évaluation des risques</strong> à la <strong>défense personnalisée</strong>. En cas d'attaque, nous intervenons rapidement pour minimiser l'impact. Grâce à nos <strong>technologies avancées</strong> et à un <strong>support expert</strong>, votre entreprise est en sécurité. Vous pouvez avoir l'esprit tranquille.</p>
+            <ul class="text-start d-flex flex-row align-items-center">
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Analyse rigoureuse</strong> des menaces et failles.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Solutions sur-mesure</strong>, sculptées pour s'adapter parfaitement à votre entreprise.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Implication</strong> de vos équipes à travers des formations, pour une riposte encore plus rapide.</li>
             </ul>
-            <a href="../../WebstormProjects/Projet%20Web/html/Services.html" class="btn btn-primary">Montez d'un Cran la Sécurité de vos Opérations!</a>
+            <a href="html/Services.html" class="btn btn-primary mt-auto p-2 fs-5">Montez d'un Cran la Sécurité de vos Opérations!</a>
           </div>
         </div>
-        <div class="scroll-container">
-          <a href="#service-content2">
-            <div class="scroll-down"></div>
-          </a>
-        </div>
-        <div class="service">
-          <div class="service-image">
-            <img src="../../WebstormProjects/Projet%20Web/img/personnal-security.jpg" alt="Sécurité Personnelle">
+        <div class="service row gx-5 shadow pt-3 pb-3 mb-5 bg-body rounded">
+          <div class="service-image col align-self-center">
+            <img class="rounded img-fluid w-auto" src="img/personnal-security.jpg" alt="Sécurité Personnelle">
           </div>
-          <div class="service-content">
-            <h3><strong>Formule Particuliers : Votre Application dédiée à la Cyber-Sécurité</strong></h3>
-            <p><strong>Découvrez la tranquillité</strong> avec notre application de sécurité sur-mesure. Plus qu'un simple antivirus, elle sera votre plus fidèle allié sur Internet en défendant vos données personnelles. C'est un outil simple d'utilisation, garantissant des navigations, des échanges, et des transactions en ligne sécurisées.</p>
-            <ul>
-              <li><strong>Détecteur de menaces</strong> pour une protection proactive.</li>
-              <li><strong>Boîte à outils complète</strong> pour une sécurité optimisée.</li>
-              <li><strong>Tutoriels et guides</strong> pour une navigation sans soucis.</li>
+          <div class="service-content col d-flex flex-column align-items-center p-4">
+            <h3 class="h2 mb-2"><strong>Formule Particuliers : Votre Application dédiée à la Cyber-Sécurité</strong></h3>
+            <p class="text-start fs-5 mb-4 text-lg-start"><strong>Découvrez la tranquillité</strong> avec notre application de sécurité sur-mesure. Plus qu'un simple antivirus, elle sera votre plus fidèle allié sur Internet en défendant vos données personnelles. C'est un outil simple d'utilisation, garantissant des navigations, des échanges, et des transactions en ligne sécurisées.</p>
+            <ul class="text-start d-flex flex-row align-items-center">
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Détecteur de menaces</strong> pour une protection proactive.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Boîte à outils complète</strong> pour une sécurité optimisée.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Tutoriels et guides</strong> pour une navigation sans soucis.</li>
             </ul>
-            <a href="../../WebstormProjects/Projet%20Web/html/Services.html" class="btn btn-primary" id="service-content2">Obtenez votre Application de Protection Personnalisée</a>
+            <a href="html/Services.html" class="btn btn-primary mt-auto p-2 fs-5" id="service-content2">Obtenez votre Application de Protection Personnalisée</a>
           </div>
         </div>
       </section>
 
-      <section id="news">
-        <h2>L'actualité d'AllSafe</h2>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">24 novembre 2023 : Lancement d'une nouvelle fonctionnalité</h5>
-            <p class="card-text">Nous sommes ravis d'annoncer le lancement d'une nouvelle fonctionnalité prometteuse sur notre plateforme. Cette mise à jour a été conçue pour améliorer votre expérience utilisateur et renforcer votre sécurité en ligne. Plus de détails seront bientôt disponibles - restez à l'écoute !</p>
+      <section id="news" class="container py-5">
+        <h2 class="h2 text-center">L'actualité d'AllSafe</h2>
+        <div class="d-flex flex-row justify-content-around">
+          <div class="card mb-3 card" style="max-width: 540px;">
+            <div class="card-body">
+              <h5 class="card-title">24 novembre 2023 : Lancement d'une nouvelle fonctionnalité</h5>
+              <p class="card-text">Nous sommes ravis d'annoncer le lancement d'une nouvelle fonctionnalité prometteuse sur notre plateforme. Cette mise à jour a été conçue pour améliorer votre expérience utilisateur et renforcer votre sécurité en ligne. Plus de détails seront bientôt disponibles - restez à l'écoute !</p>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h3>12 décembre 2023 : Nouveau partenariat industriel</h3>
-            <p>Nous sommes fiers de vous annoncer que nous avons conclu un partenariat stratégique avec des leaders du secteur de la cyber-sécurité. Ce contrat nous permettra d'élargir notre offre de services et de mieux répondre à vos besoins en matière de sécurité en ligne.</p>
+          <div class="card mb-3 card" style="max-width: 540px;">
+            <div class="card-body">
+              <h3>12 décembre 2023 : Nouveau partenariat industriel</h3>
+              <p>Nous sommes fiers de vous annoncer que nous avons conclu un partenariat stratégique avec des leaders du secteur de la cyber-sécurité. Ce contrat nous permettra d'élargir notre offre de services et de mieux répondre à vos besoins en matière de sécurité en ligne.</p>
+            </div>
           </div>
         </div>
       </section>
 
     </main>
 
-    <footer> <!-- Tous droits réservés, Login, Réseaux sociaux -->
-      <div class="footer-content">
-        <p>&copy; 2023 AllSafe Security. Tous droits réservés.</p>
-        <a href="../../WebstormProjects/Projet%20Web/html/AdminLogin.html" class="btn btn-primary login">Log In</a>
+    <footer class="footer container bg-dark min-vw-100">
+      <div class="footer-content text-center d-flex flex-row justify-content-center align-items-center pt-2">
+        <p class="mb-2">&copy; 2023 AllSafe Security. Tous droits réservés.</p>
+        <a href="html/AdminLogin.html" class="btn btn-primary login">Log In</a>
       </div>
     </footer>
   </body>
