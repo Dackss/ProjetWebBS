@@ -6,42 +6,36 @@
     <meta name="description" content="A Website for a cyber-security startup"> <!-- Website description -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive viewport for mobile devices -->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="../main.css"> <!-- Main stylesheet -->
+    <link rel="stylesheet" href="variables.css">
+    
+    <meta name="theme-color" content="#fafafa">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header> <!-- Logo, Search Bar, Navigation Menu -->
-      <nav class="navbar">
-        <div>
-          <a href="../index.html" class="navbar__logo">
-            <img src="/img/favicon.ico" alt="Logo CyberSec Startup">
-          </a>
-        </div>
-        <div class="nav-links">
-          <ul class="navbar__menu">
-            <li><a href="Services.html" class="nav-link">Services</a></li>
-            <li><a href="Contact.html" class="nav-link">Contact</a></li>
-            <li>
-              <a href="ClientLogin.html" class="nav-link">
-                <span class="icon-client-space">
-                  <svg viewBox="0 0 24 24" class="client-space-icon">
-                    <circle cx="12" cy="5.5" r="2.5"></circle>
-                    <path d="M15 10H9a4 4 0 0 0-4 4v7h14v-7a4 4 0 0 0-4-4z"></path>
-                  </svg>
-                </span>
-              </a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-custom justify-content-between position-fixed">
+        <a class="navbar-brand m-2" href="#hero">
+          <img src="../img/favicon.ico" alt="Logo" style="height: 4rem; width: auto; transition: opacity 0.3s ease; border-radius: 50%;">
+        </a>
+        <button class="navbar-toggler ms-auto menu-burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav m-2">
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
             </li>
           </ul>
         </div>
-        <button class="menu-burger" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
-          <svg width="50" height="50" viewBox="0 0 100 100">
-            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-            <path class="line line2" d="M 20,50 H 80" />
-            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-          </svg>
-        </button>
       </nav>
     </header>
 
@@ -61,19 +55,19 @@
         <h1>Nos collaborateurs</h1>
         <div class="container">
           <div class="brand">
-            <img src="../../../WebstormProjects/Projet%20Web/img/Amazon_icon.png" alt="Amazon">
+            <img src="../img/Amazon_icon.png" alt="Amazon">
             <h2>Amazon</h2>
           </div>
           <div class="brand">
-            <img src="../../../WebstormProjects/Projet%20Web/img/Meta-logo.png" alt="Meta">
+            <img src="../img/Meta-logo.png" alt="Meta">
             <h2>Meta</h2>
           </div>
           <div class="brand">
-            <img src="../../../WebstormProjects/Projet%20Web/img/7612698.png" alt="Google">
+            <img src="../img/7612698.png" alt="Google">
             <h2>Google</h2>
           </div>
           <div class="brand">
-            <img src="../../../WebstormProjects/Projet%20Web/img/Isen.png" alt="Isen">
+            <img src="../img/Isen.png" alt="Isen">
             <h2>Isen</h2>
           </div>
         </div>
@@ -82,7 +76,7 @@
       <section id="members">
         <h1>Notre équipe</h1>
         <div class="container">
-        <img src="/img/ALNOT-Gustave.jpg" alt="Profile piture" class="image">
+        <img src="../img/ALNOT-Gustave.jpg" alt="Profile piture" class="image">
           <h2 class="name">Gustave ALNOT</h2>
           <nav>
             <ul>
@@ -94,7 +88,7 @@
         </div>
 
         <div class="container">
-          <img src="/img/GEFFROY-Thomas.jpg" alt="Profile piture" class="image">
+          <img src="../img/GEFFROY-Thomas.jpg" alt="Profile piture" class="image">
           <h2 class="name">Thomas GEFFROY</h2>
           <nav>
             <ul>
@@ -107,22 +101,11 @@
         </div>
       </section>
     </main>
-    <footer> <!-- Tous droits réservés, Login, Réseaux sociaux -->
-      <div class="footer-content">
-        <p>&copy; 2023 AllSafe Security. Tous droits réservés.</p>
-        <a href="AdminLogin.html" class="btn btn-primary login">Log In</a>
-      </div>
-      <div class="social-media-links">
-        <!-- réseaux sociaux -->
+    <footer class="footer container bg-dark min-vw-100">
+      <div class="footer-content text-center d-flex flex-row justify-content-center align-items-center pt-2">
+        <p class="mb-2">&copy; 2023 AllSafe Security. Tous droits réservés.</p>
+        <a href="html/AdminLogin.html" class="btn btn-primary login">Log In</a>
       </div>
     </footer>
   </body>
-  <script>
-      const menuHamburger = document.querySelector(".menu-burger")
-      const navLinks = document.querySelector(".nav-links")
-
-      menuHamburger.addEventListener('click',()=>{
-      navLinks.classList.toggle('mobile-menu')
-    })
-  </script>
 </html>
