@@ -11,7 +11,8 @@
 
 
     <link rel="stylesheet" href="../main.css"> <!-- Main.css -->
-    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="../services.css">
+    <link rel="stylesheet" href="../variables.css">
 
     <meta name="theme-color" content="#fafafa">
 
@@ -40,44 +41,54 @@
       </nav>
     </header>
 
-    <main> <!-- Main content -->
-        <div class="container">
-          <div class="row">
-            <label>Vous êtes :</label>
+    <main>
+      <div class="select py-5 d-flex flex-column align-items-center text-center justify-content-center">
+        <div class="row">
+          <label>Vous êtes :</label>
+        </div>
+        <label for="choice"></label><select name="client" id="choice" required class="input">
+          <option value="" disabled hidden>Sélectionner...</option>
+          <option value="entreprise" selected>Entreprise</option>
+          <option value="particulier">Particulier</option>
+        </select>
+      </div>
+
+      <section class="services py-5 d-flex flex-column align-items-center text-center justify-content-center">
+
+        <div class="container row gx-5 shadow mb-5 pt-3 pb-3 bg-body rounded" id="entreprise">
+          <div class="service-image row align-self-center">
+            <img class="rounded img-fluid" src="../img/services.jpg" alt="Sécurité pour les Entreprises">
           </div>
-          <label for="choice"></label><select name="client" id="choice" required class="input">
-            <option value="" disabled hidden>Sélectionner...</option>
-            <option value="entreprise" selected>Entreprise</option>
-            <option value="particulier">Particulier</option>
-          </select>
+          <div class="service-content col d-flex flex-column align-items-center p-4">
+            <h3 class="h2 mb-2"><strong>Sécurité d'Entreprise Sur-Mesure</strong></h3>
+            <p class="text-start fs-5 mb-4 text-lg-start"><strong>Défiez-les cyber-menaces</strong> avec nos solutions complètes de sécurité. Approche globale, analyse précise, réaction rapide. Nous équipons votre entreprise avec des <strong>stratégies de défense personnalisées</strong> et <strong>des technologies de pointe</strong>.</p>
+            <ul class="text-start d-flex flex-row align-items-center">
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Évaluation rigoureuse</strong> des risques.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Solutions innovantes</strong> pour la défense.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Formation proactive</strong> de vos équipes.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Protection active</strong> grâce à un suivi constant.</li>
+            </ul>
+            <p class="text-start fs-5 mb-4 text-lg-start"><strong>Contactez-nous</strong> pour obtenir un devis sur mesure.</p>
+            <a href="Contact.html" class="btn btn-primary mt-auto p-2 fs-5">Nous contacter</a>
+          </div>
         </div>
-
-        <div class="container" id="entreprise">
-          <img src="../img/services.jpg" alt="Image représentant les services de sécurité" style="height: 10em; width: auto;">
-          <h3><strong>Sécurité d'Entreprise Sur-Mesure</strong></h3>
-          <p><strong>Défiez-les cyber-menaces</strong> avec nos solutions complètes de sécurité. Approche globale, analyse précise, réaction rapide. Nous équipons votre entreprise avec des <strong>stratégies de défense personnalisées</strong> et <strong>des technologies de pointe</strong>.</p>
-          <ul>
-            <li><strong>Évaluation rigoureuse</strong> des risques.</li>
-            <li><strong>Solutions innovantes</strong> pour la défense.</li>
-            <li><strong>Formation proactive</strong> de vos équipes.</li>
-            <li><strong>Protection active</strong> grâce à un suivi constant.</li>
-          </ul>
-          <p><strong>Contactez-nous</strong> pour obtenir un devis sur mesure.</p>
-          <a href="Contact.html" class="btn-primary">Nous contacter</a>
+        <div class="container col gx-5 shadow pt-3 pb-3 mb-5 bg-body rounded" id="particulier">
+          <div class="service-image col align-self-center">
+            <img class="rounded img-fluid" src="../img/security-application.jpg" alt="Image d'une application de sécurité">
+          </div>
+          <div class="service-content col d-flex flex-column align-items-center p-4">
+            <h3 class="h2 mb-2"><strong>Sécurité Personnalisée Haut de Gamme</strong></h3>
+            <p class="text-start fs-5 mb-4 text-lg-start"><strong>Assurez votre tranquillité d'esprit</strong> avec notre application de bureau complète. Plus qu'un simple antivirus, c'est un véritable coffre-fort pour vos données personnelles. Utilisable facilement et intuitivement, elle garantit la liberté de naviguer, communiquer et effectuer vos transactions en ligne en toute sécurité.</p>
+            <ul class="text-start d-flex flex-row align-items-center">
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Analyse approfondie</strong> pour identifier les menaces.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Outil tout-en-un</strong> pour une sécurité globale.</li>
+              <li class="text-center mx-3 my-0 p-2 rounded"><strong>Tutoriels et guides</strong> pour une utilisation sécurisée.</li>
+            </ul>
+            <p class="text-start fs-5 mb-4 text-lg-start"><strong>Contactez-nous</strong> pour obtenir un devis personnalisé.</p>
+            <a href="Contact.html" class="btn btn-primary mt-auto p-2 fs-5">Nous contacter</a>
+          </div>
         </div>
-
-        <div class="container" id="particulier">
-          <img src="../img/security-application.jpg" alt="Image d'une application de sécurité" id="img2">
-          <h3><strong>Sécurité Personnalisée Haut de Gamme</strong></h3>
-          <p><strong>Assurez votre tranquillité d'esprit</strong> avec notre application de bureau complète. Plus qu'un simple antivirus, c'est un véritable coffre-fort pour vos données personnelles. Utilisable facilement et intuitivement, elle garantit la liberté de naviguer, communiquer et effectuer vos transactions en ligne en toute sécurité.</p>
-          <ul>
-            <li><strong>Analyse approfondie</strong> pour identifier les menaces.</li>
-            <li><strong>Outil tout-en-un</strong> pour une sécurité globale.</li>
-            <li><strong>Tutoriels et guides</strong> pour une utilisation sécurisée.</li>
-          </ul>
-          <p><strong>Contactez-nous</strong> pour obtenir un devis personnalisé.</p>
-          <a href="Contact.html" class="btn-primary">Nous contacter</a>
-        </div>
+      </section>
     </main>
     <footer class="footer container bg-dark min-vw-100">
       <div class="footer-content text-center d-flex flex-row justify-content-center align-items-center pt-2">
