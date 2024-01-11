@@ -1,0 +1,12 @@
+.brand img{
+    width: 10em;
+    height: 10em;
+    object-fit: contain;
+}
+.container nav ul {
+    list-style-image: url(../img/right_chevron.svg);
+  }
+
+#members .container{
+    flex-direction: row;
+}

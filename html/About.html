@@ -10,7 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../main.css"> <!-- Main stylesheet -->
-    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="../variables.css">
+    <link rel="stylesheet" href="../about.css">
     
     <meta name="theme-color" content="#fafafa">
 
@@ -40,9 +41,9 @@
     </header>
 
     <main> <!-- Main content -->
-      <section id="company">
-        <h1>L'entreprise</h1>
-        <div class="container">
+      <section class="services py-5 d-flex flex-column align-items-center text-center justify-content-center" id="company align-items-center">
+        <h1 class="display-4 mb-2"><strong>L'entreprise</strong></h1>
+        <div class="container gx-5 shadow mb-5 pt-3 pb-3 bg-body rounded">
           AllSafe a fait ses débuts en 2011 avec une équipe dédiée d'experts en sécurité informatique. Notre mission était, et est toujours, de rendre le monde numérique plus sûr en fournissant des solutions de cybersécurité haut de gamme. Chaque défi était une occasion de grandir et de s'améliorer.<br>
           <br>
           En 2018, une collaboration avec Amazon nous a donné l'opportunité de montrer nos compétences lors d'une cyberattaque importante. Notre équipe a réussi à arrêter l'attaque et à protéger les données vitales. Cette expérience a renforcé notre réputation dans l'industrie de la cybersécurité.<br>
@@ -51,52 +52,56 @@
         </div>
       </section>
 
-      <section id="collabs">
-        <h1>Nos collaborateurs</h1>
-        <div class="container">
-          <div class="brand">
+      <section class="services py-5 d-flex flex-column align-items-center text-center justify-content-center" id="collabs">
+        <h1 class="display-4 mb-2"><strong>Nos collaborateurs</strong></h1>
+        <div class="row text-center gx-5 shadow mb-5 pt-3 pb-3 bg-body rounded">
+          <div class="brand col-md-3">
             <img src="../img/Amazon_icon.png" alt="Amazon">
             <h2>Amazon</h2>
           </div>
-          <div class="brand">
+          <div class="brand col-md-3">
             <img src="../img/Meta-logo.png" alt="Meta">
             <h2>Meta</h2>
           </div>
-          <div class="brand">
+          <div class="brand col-md-3">
             <img src="../img/7612698.png" alt="Google">
             <h2>Google</h2>
           </div>
-          <div class="brand">
+          <div class="brand col-md-3">
             <img src="../img/Isen.png" alt="Isen">
             <h2>Isen</h2>
           </div>
         </div>
       </section>
 
-      <section id="members">
-        <h1>Notre équipe</h1>
-        <div class="container">
-        <img src="../img/ALNOT-Gustave.jpg" alt="Profile piture" class="image">
-          <h2 class="name">Gustave ALNOT</h2>
-          <nav>
-            <ul>
-              <li>Developpeur Web Frontend</li>
-              <li>Expert Comptable</li>
-              <li>Humoriste</li>
-            </ul>
-          </nav>
+      <section class="services d-flex flex-column align-items-center text-center justify-content-center" id="members">
+        <h1 class="display-4 mb-2"><strong>Notre équipe</strong></h1>
+        <div class="container shadow mb-5 pt-3 pb-3 bg-body w-auto rounded">
+          <img class="col" src="../img/ALNOT-Gustave.jpg" alt="Profile piture" class="image">
+          <div class="col d-flex flex-column align-items-center p-4">
+            <h2 class="name">Gustave ALNOT</h2>
+            <nav>
+              <ul>
+                <li>Developpeur Web Frontend</li>
+                <li>Expert Comptable</li>
+                <li>Humoriste</li>
+              </ul>
+            </nav>
+          </div>
         </div>
 
-        <div class="container">
-          <img src="../img/GEFFROY-Thomas.jpg" alt="Profile piture" class="image">
+        <div class="container shadow mb-5 pt-3 pb-3 bg-body w-auto rounded">
+          <img class="col" src="../img/GEFFROY-Thomas.jpg" alt="Profile piture" class="image">
           <h2 class="name">Thomas GEFFROY</h2>
-          <nav>
-            <ul>
-              <li>Expert en Cybersécurité</li>
-              <li>Developpeur Web Frontend</li>
-              <li>Diplômé de Harvard</li>
-            </ul>
-          </nav>
+          <div class="col d-flex flex-column align-items-center p-4">
+            <nav>
+              <ul>
+                <li>Expert en Cybersécurité</li>
+                <li>Developpeur Web Frontend</li>
+                <li>Diplômé de Harvard</li>
+              </ul>
+            </nav>
+          </div>
 
         </div>
       </section>
